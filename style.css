@@ -13,12 +13,12 @@ body{
 /* App */
 
 .app{
-    width:350px;
-    min-height:100vh;
+    max-width:350px;
+    max-height:120px;
 
     background:black;
-
-    padding:30px;
+    position:relative;
+    padding:30px 20px;
 }
 
 /* Profile */
@@ -27,6 +27,27 @@ body{
     display:flex;
     align-items:center;
     gap:15px;
+}
+.more-info{
+
+    background:rgb(14, 13, 13);
+    position:absolute;
+    right:28px;
+    top:12px;
+    margin:0;
+    margin-top:1px;
+    display:flex;
+    flex-direction:column;
+    padding:5px;
+    gap:5px;
+    border-radius:5px;
+}
+.dot{
+    width:4px;
+    height:4px;
+    
+    background:rgb(250, 250, 250);
+    border-radius:50%;
 }
 
 .avatar-ring{
@@ -161,8 +182,7 @@ hr{
 .card{
     background:rgb(18,16,16);
 
-    margin-top:20px;
-
+    margin-top:40px;
     border-radius:20px;
 
     padding:20px;
@@ -175,7 +195,7 @@ hr{
     width:50px;
     height:50px;
 
-    background:#4EA5FF;
+    background:#2989ef;
     border-radius:50%;
 
     display:flex;
@@ -183,7 +203,7 @@ hr{
     align-items:center;
 
     margin:0 auto;
-
+    margin-top:32px;
     box-shadow:
     0 5px 15px rgba(69, 127, 221, 0.5),
     inset 0 3px 5px rgba(170, 203, 227, 0.5),
@@ -217,15 +237,15 @@ hr{
     border-radius:10px;
 
     left:50%;
-    top:-40%;
-    transform:translate(-50%, -50%);
+    top:-50%;
+    transform:translate(-50%, -45%);
 }
 
 .card-content{
     text-align:center;
     color:white;
     font-size:14px;
-    padding:5px;
+    padding:2px;
 }
 .card-description{
     text-align:center;
@@ -236,10 +256,19 @@ hr{
     justify-content:center;
     align-items:center;
     margin:0 auto;
-    gap:5px;
+    gap:7px;
 }
 .skillscape{
     font-size:12px;
     color:rgb(251, 161, 87);
     font-weight:500;
 }
+
+.discover p{
+    margin-top:4px;
+}
+.card-content p{
+    margin:0;
+    margin-top:15px;
+}
+
